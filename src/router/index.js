@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
-import homep from '@/components/elpp1'
+import homep from '@/components/pages/elpp1'
 
 Vue.use(Router)
 
