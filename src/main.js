@@ -3,13 +3,18 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import nav from './components/commons/nav1'
 
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
+// 这里是通用的组件
+Vue.component('nav1',nav);
+
+// 这里是根实例
 new Vue({
   el: '#app',
   router,
-  components: { App },
+  components: {App},
   template: '<App/>'
 })

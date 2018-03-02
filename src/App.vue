@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
-    <div id="head">这里是主导航1</div>
+    <nav1></nav1>
     <div id="tf" v-if="show">{{topshu}}</div>
     <router-view/>
   </div>
@@ -51,14 +51,6 @@ html, body, #app{
   text-align: center;
   color: #2c3e50;
   /* margin-top: 60px; */
-}
-#head{
-  width: 100%;
-  height: 70px;
-  background-color: green;
-  line-height: 70px;
-  position: fixed;
-  top: 0;
 }
 #tf{
   width: 25px;
