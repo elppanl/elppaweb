@@ -4,11 +4,11 @@
             <div id="hbox" v-if="show">
                 <router-link to="/"><img src="../../assets/elplogo1.png" alt="navlogo" class="himg1"></router-link>
                 <ul>
-                    <router-link to="/" class="hbtn1"><li>我的世界</li></router-link>
-                    <router-link to="/elpp2" class="hbtn1"><li>前端技术</li></router-link>
-                    <router-link to="/elpp3" class="hbtn1"><li>太极之道</li></router-link>
-                    <router-link to="/elpp4" class="hbtn1"><li>诗与远方</li></router-link>
-                    <router-link to="/elpp5" class="hbtn1"><li>有朋自来</li></router-link>
+                    <router-link to="/" class="hbtn1" :class="{'navactive':isActive1}" id="hbtn1"><li @click="navact1">我的世界</li></router-link>
+                    <router-link to="/elpp2" class="hbtn1" :class="{'navactive':isActive2}" id="hbtn2"><li @click="navact2">前端技术</li></router-link>
+                    <router-link to="/elpp3" class="hbtn1" :class="{'navactive':isActive3}" id="hbtn3"><li @click="navact3">太极之道</li></router-link>
+                    <router-link to="/elpp4" class="hbtn1" :class="{'navactive':isActive4}" id="hbtn4"><li @click="navact4">诗与远方</li></router-link>
+                    <router-link to="/elpp5" class="hbtn1" :class="{'navactive':isActive5}" id="hbtn5"><li @click="navact5">有朋自来</li></router-link>
                 </ul>
             </div>
             <div id="hboxm" v-if="showm">
@@ -40,7 +40,12 @@
             return{
                 show:true,
                 showm:false,
-                showml:false
+                showml:false,
+                isActive1:'',
+                isActive2:'',
+                isActive3:'',
+                isActive4:'',
+                isActive5:''
             }
         },
         methods: {
@@ -68,10 +73,49 @@
             },
             mloff(){
                 this.showml=false;
+            },
+            navact0(){
+                this.isActive1=true;
+            },
+            navact1(){
+                this.isActive1=true;
+                this.isActive2=false;
+                this.isActive3=false;
+                this.isActive4=false;
+                this.isActive5=false;
+            },
+            navact2(){
+                this.isActive1=false;
+                this.isActive2=true;
+                this.isActive3=false;
+                this.isActive4=false;
+                this.isActive5=false;
+            },
+            navact3(){
+                this.isActive1=false;
+                this.isActive2=false;
+                this.isActive3=true;
+                this.isActive4=false;
+                this.isActive5=false;
+            },
+            navact4(){
+                this.isActive1=false;
+                this.isActive2=false;
+                this.isActive3=false;
+                this.isActive4=true;
+                this.isActive5=false;
+            },
+            navact5(){
+                this.isActive1=false;
+                this.isActive2=false;
+                this.isActive3=false;
+                this.isActive4=false;
+                this.isActive5=true;
             }
         },
         mounted() {
             this.panduan(),
+            this.navact0(),
             window.addEventListener('resize', this.sf)
         }
     }
@@ -186,5 +230,8 @@
             /* 执行离开时执行下列过渡，在1秒完成 */
             transform:translate(300px,0);
             transition:all .5s;
+        }
+        .navactive{
+            border-bottom: 5px solid #cc6600;
         }
 </style>

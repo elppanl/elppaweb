@@ -29,7 +29,6 @@ export default {
    sf(){
      console.log(window.innerWidth);
    }
-
   },
   mounted() {
    window.addEventListener('scroll', this.gun),
