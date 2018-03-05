@@ -2,7 +2,7 @@
     <div>
         <div id="head">
             <div id="hbox" v-if="show">
-                <router-link to="/"><img src="../../assets/elplogo1.png" alt="navlogo" width="50px" height="50px"></router-link>
+                <router-link to="/"><img src="../../assets/elplogo1.png" alt="navlogo" class="himg1"></router-link>
                 <ul>
                     <router-link to="/" class="hbtn1"><li>我的世界</li></router-link>
                     <router-link to="/elpp2" class="hbtn1"><li>前端技术</li></router-link>
@@ -12,7 +12,7 @@
                 </ul>
             </div>
             <div id="hboxm" v-if="showm">
-                <router-link to="/" id="hmlogo"><img src="../../assets/elplogo1.png" alt="navlogo" width="50px" height="50px"></router-link>
+                <router-link to="/" id="hmlogo"><img src="../../assets/elplogo1.png" alt="navlogo" class="himg1"></router-link>
                 <i class="icon iconfont icon-liebiao" @click="mlshow"></i>
             </div> 
         </div>
@@ -85,6 +85,10 @@
             position: fixed;
             top: 0;
             border-bottom: 5px solid #ccffcc;
+        }
+        .himg1{
+            width: 50px;
+            height: 50px;
         }
         #hbox{
             width: 980px;
