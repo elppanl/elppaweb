@@ -16,18 +16,20 @@
                 <i class="icon iconfont icon-liebiao" @click="mlshow"></i>
             </div> 
         </div>
-        <div id="hbmlist" v-if="showml">
-            <div id="htmlbox" @click="mloff">
-                <i class="icon iconfont icon-31fanhui2"></i>
-            </div> 
-            <ul>
-                <router-link to="/" class="hbtn2"><li>我的世界</li></router-link>
-                <router-link to="/elpp2" class="hbtn2"><li>前端技术</li></router-link>
-                <router-link to="/elpp3" class="hbtn2"><li>太极之道</li></router-link>
-                <router-link to="/elpp4" class="hbtn2"><li>诗与远方</li></router-link>
-                <router-link to="/elpp5" class="hbtn2"><li>有朋自来</li></router-link>
-            </ul>
-        </div>
+        <transition name="fade">
+            <div id="hbmlist" v-if="showml">
+                <div id="htmlbox" @click="mloff">
+                    <i class="icon iconfont icon-31fanhui2"></i>
+                </div> 
+                <ul>
+                    <router-link to="/" class="hbtn2"><li>我的世界</li></router-link>
+                    <router-link to="/elpp2" class="hbtn2"><li>前端技术</li></router-link>
+                    <router-link to="/elpp3" class="hbtn2"><li>太极之道</li></router-link>
+                    <router-link to="/elpp4" class="hbtn2"><li>诗与远方</li></router-link>
+                    <router-link to="/elpp5" class="hbtn2"><li>有朋自来</li></router-link>
+                </ul>
+            </div>
+        </transition>    
     </div>
     
 </template>
@@ -116,7 +118,7 @@
         }
         #hboxm>i{
             font-size: 26px;
-            display: inline-block;
+            /* display: inline-block; */
             float: right;
             margin-right: 5%;
             color:#663333;
@@ -160,5 +162,25 @@
         }
         #hbmlist>ul{
             padding-left: 0;
+        }
+        
+        .fade-enter {
+            /* 进入前状态是right:-300px */
+            right: -300px;
+            /* 从进入前到进入完成需要以下过渡 */
+            transform:translate(300px,0);
+        }
+        .fade-leave{
+            /* 离开前，也就是进入完成后的状态是right:0 */
+            right: 0px;
+        }
+        .fade-enter-active{
+            /* 执行进入时，执行上面设置好的过渡（transform:translate(300px,0);）在1秒完成 */
+            transition:all .5s;
+        }
+        .fade-leave-active{
+            /* 执行离开时执行下列过渡，在1秒完成 */
+            transform:translate(300px,0);
+            transition:all .5s;
         }
 </style>
