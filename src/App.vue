@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <!-- <img src="./assets/logo.png"> -->
-    <nav1></nav1>
+    <!-- 给导航组件传入一个props -->
+    <nav1 :message="navbiao"></nav1>
     <div id="tf" v-if="show">{{topshu}}</div>
     <router-view/>
   </div>
@@ -13,7 +13,8 @@ export default {
   data:function(){
     return{
       show:false,
-      topshu:''
+      topshu:'',
+      navbiao:''
     }
   },
   methods: {
@@ -28,11 +29,19 @@ export default {
    },
    sf(){
      console.log(window.innerWidth);
+   },
+  //  更新页面时将当前路由的name赋值给this.navbiao，这个navbiao是要传入头部导航组件的数据
+   navupd(){
+     this.navbiao=this.$route.name;
    }
   },
   mounted() {
+    this.navupd(),
    window.addEventListener('scroll', this.gun),
    window.addEventListener('resize', this.sf)
+  },
+  updated(){
+    this.navupd()
   }
 }
 </script>
