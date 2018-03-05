@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="elpp1">
         <p>这里是首页的内容1</p>
         <p>这里是首页的内容</p>
         <p>这里是首页的内容</p>
@@ -66,8 +66,8 @@
 </script>
 
 <style scoped>
-    /* div{
-        margin-top: 75px;
-    } */
+    #elpp1{
+        margin-top: 50px;
+    }
 </style>
 
