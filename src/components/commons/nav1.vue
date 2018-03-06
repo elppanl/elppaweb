@@ -75,6 +75,9 @@
             },
             mloff(){
                 this.showml=false;
+            },
+            mltop(){
+
             }
         },
         mounted() {
@@ -131,6 +134,7 @@
             position: fixed;
             top: 0;
             border-bottom: 5px solid #ccffcc;
+            border-top: 5px solid #ccffcc;
         }
         .himg1{
             width: 50px;
@@ -178,7 +182,7 @@
             margin-left: 5%;
         }
         #hbmlist{
-            position: absolute;
+            position: fixed;
             top: 0;
             right: 0;
             width: 50%;

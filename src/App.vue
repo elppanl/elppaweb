@@ -19,7 +19,6 @@ export default {
   },
   methods: {
    gun() {
-    console.log(document.documentElement.scrollTop || document.body.scrollTop);
     this.topshu = document.documentElement.scrollTop || document.body.scrollTop;
     if(this.topshu>300){
       this.show=true;
