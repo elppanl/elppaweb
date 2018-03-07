@@ -18,6 +18,22 @@
             </div>
         </div>
         <!-- element carousel结束 -->
+
+        <!-- vant开始 -->
+        <div id="mlunbox" v-if="mmlun">
+            <van-swipe :autoplay="3000">
+                <van-swipe-item key="1">
+                    <router-link to="/elpp5"><img src="../../assets/b1.jpg" alt="lun1"></router-link>
+                </van-swipe-item>
+                <van-swipe-item key="2">
+                    <router-link to="/elpp5"><img src="../../assets/b2.jpg" alt="lun2"></router-link>
+                </van-swipe-item>
+                <van-swipe-item key="2">
+                    <router-link to="/elpp5"><img src="../../assets/b3.jpg" alt="lun3"></router-link>
+                </van-swipe-item>
+            </van-swipe>
+        </div>
+        <!-- vant结束 -->
     </div>
     
 
@@ -27,23 +43,28 @@
     export default{
         data:function(){
             return{
-                pclun:''
+                pclun:'',
+                mmlun:''
             }
         },
         methods:{
             panduan(){
                 if(window.innerWidth>979){
                     this.pclun=true;
+                    this.mmlun=false;
                 }else{
                     this.pclun=false;
+                    this.mmlun=true;
                 }
             },
             sf(){
                 console.log(window.innerWidth);
                 if(window.innerWidth>979){
                     this.pclun=true;
+                    this.mmlun=false;
                 }else{
                     this.pclun=false;
+                    this.mmlun=true;
                 }
             }
         },
@@ -79,5 +100,14 @@
         margin: 0 auto;
     }
     /* element carousel css结束 */
+    /* vant开始 */
+    #mlunbox{
+        width: 100%;
+    }
+    #mlunbox img{
+        width: 100%;
+    }
+    /* vant结束 */
+
 </style>
 
