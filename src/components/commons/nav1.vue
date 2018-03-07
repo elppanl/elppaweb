@@ -133,6 +133,7 @@
             background-color: #ccffcc;
             position: fixed;
             top: 0;
+            z-index: 900;
             border-bottom: 5px solid #ccffcc;
             border-top: 5px solid #ccffcc;
         }
@@ -148,7 +149,8 @@
             padding-left: 35px;
         }
         #hbox>ul{
-            width: 600px;
+            /* width: 600px; */
+            padding-right: 35px;
             display: -webkit-inline-box;
             float: right;
             margin-top: 0;
@@ -185,6 +187,7 @@
             position: fixed;
             top: 0;
             right: 0;
+            z-index: 1000;
             width: 50%;
             height: 100%;
             background-color:rgba(0, 102, 51, .9);

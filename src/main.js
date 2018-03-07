@@ -5,6 +5,12 @@ import App from './App'
 import router from './router'
 import nav from './components/commons/nav1'
 
+// 引入element开始
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(ElementUI);
+// 引入element结束
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
