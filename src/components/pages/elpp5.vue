@@ -47,6 +47,7 @@
         margin-top: 60px;
         width: 100%;
         background-color: #cccc99;
+        /* background-color: #336666; */
     }
     .jiantu1{
         display:block;
