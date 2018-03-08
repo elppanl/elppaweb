@@ -1,6 +1,8 @@
 <template>
     <div id="elpp3">
-        这里是太极之道页面
+        <come>
+            <p>《太极之道》栏目在建中</p>
+        </come>
     </div>
 </template>
 

@@ -1,6 +1,8 @@
 <template>
     <div id="elpp4">
-        这里是诗与远方页面
+        <come>
+            <p>《诗与远方》栏目在建中</p>
+        </come>
     </div>
 </template>
 

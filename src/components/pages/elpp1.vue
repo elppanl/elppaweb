@@ -22,13 +22,13 @@
         <!-- vant开始 -->
         <div id="mlunbox" v-if="mmlun">
             <van-swipe :autoplay="3000">
-                <van-swipe-item key="1">
+                <van-swipe-item key="4">
                     <router-link to="/elpp5"><img src="../../assets/b1.jpg" alt="lun1"></router-link>
                 </van-swipe-item>
-                <van-swipe-item key="2">
+                <van-swipe-item key="5">
                     <router-link to="/elpp5"><img src="../../assets/b2.jpg" alt="lun2"></router-link>
                 </van-swipe-item>
-                <van-swipe-item key="2">
+                <van-swipe-item key="6">
                     <router-link to="/elpp5"><img src="../../assets/b3.jpg" alt="lun3"></router-link>
                 </van-swipe-item>
             </van-swipe>

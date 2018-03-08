@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import nav from './components/commons/nav1'
+import come from './components/commons/comingsoon'
 
 // 引入element开始
 import ElementUI from 'element-ui';
@@ -27,6 +28,7 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 // 这里是通用的组件
 Vue.component('nav1',nav);
+Vue.component('come',come);
 
 // 这里是根实例
 new Vue({
