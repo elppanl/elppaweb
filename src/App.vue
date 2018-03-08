@@ -6,7 +6,7 @@
     <!-- <div id="tf" v-if="show">{{topshu}}</div> -->
     <el-popover
       ref="popover1"
-      placement="top-start"
+      placement="left"
       title=""
       width="10"
       trigger="hover"
@@ -29,9 +29,10 @@ export default {
   methods: {
    gun() {
     this.topshu = document.documentElement.scrollTop || document.body.scrollTop;
-    if(this.topshu>300){
+    let winwidth = window.innerWidth;
+    if(this.topshu>300 && winwidth>768){
       this.show=true;
-    }else if(this.topshu<300){
+    }else if(this.topshu<300 && winwidth<=768){
       this.show=false;
     }
    },
@@ -93,6 +94,6 @@ html, body, #app{
   opacity: .7;
 }
 .el-popover{
-  min-width: 60px;
+  min-width: 60px !important;
 }
 </style>
