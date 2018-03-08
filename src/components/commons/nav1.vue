@@ -13,6 +13,7 @@
             </div>
             <div id="hboxm" v-if="showm">
                 <router-link to="/" id="hmlogo"><img src="../../assets/elplogo1.png" alt="navlogo" class="himg1"></router-link>
+                <span id="mtit">{{mtital}}</span>
                 <i class="icon iconfont icon-liebiao" @click="mlshow"></i>
             </div> 
         </div>
@@ -47,7 +48,8 @@
                 isActive2:'',
                 isActive3:'',
                 isActive4:'',
-                isActive5:''
+                isActive5:'',
+                mtital:''
             }
         },
         methods: {
@@ -96,30 +98,35 @@
                     this.isActive3=false;
                     this.isActive4=false;
                     this.isActive5=false;
+                    this.mtital="我的世界";
                 }else if(name==='WebTechnology'){
                     this.isActive1=false;
                     this.isActive2=true;
                     this.isActive3=false;
                     this.isActive4=false;
                     this.isActive5=false;
+                    this.mtital="前端技术";
                 }else if(name==='taiji'){
                     this.isActive1=false;
                     this.isActive2=false;
                     this.isActive3=true;
                     this.isActive4=false;
                     this.isActive5=false;
+                    this.mtital="太极之道";
                 }else if(name==='yuanfang'){
                     this.isActive1=false;
                     this.isActive2=false;
                     this.isActive3=false;
                     this.isActive4=true;
                     this.isActive5=false;
+                    this.mtital="诗与远方";
                 }else if(name==='friends'){
                     this.isActive1=false;
                     this.isActive2=false;
                     this.isActive3=false;
                     this.isActive4=false;
                     this.isActive5=true;
+                    this.mtital="有朋自来";
                 }
             }
         }
@@ -140,6 +147,12 @@
         .himg1{
             width: 50px;
             height: 50px;
+            float: left;
+            margin-left: 5%;
+        }
+        #mtit{
+            font-size: 20px;
+            margin-left: -8%;
         }
         #hbox{
             width: 980px;
@@ -171,6 +184,7 @@
             width: 100%;
             height: 50px;
             line-height: 50px;
+            text-align: center;
         }
         #hboxm>i{
             font-size: 26px;
