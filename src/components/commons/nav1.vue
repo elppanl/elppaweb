@@ -17,20 +17,24 @@
                 <i class="icon iconfont icon-liebiao" @click="mlshow"></i>
             </div> 
         </div>
-        <transition name="fade">
-            <div id="hbmlist" v-if="showml">
-                <div id="htmlbox" @click="mloff">
-                    <i class="icon iconfont icon-31fanhui2"></i>
-                </div> 
-                <ul>
-                    <router-link to="/" class="hbtn2"><li>我的世界</li></router-link>
-                    <router-link to="/elpp2" class="hbtn2"><li>前端技术</li></router-link>
-                    <router-link to="/elpp3" class="hbtn2"><li>太极之道</li></router-link>
-                    <router-link to="/elpp4" class="hbtn2"><li>诗与远方</li></router-link>
-                    <router-link to="/elpp5" class="hbtn2"><li>有朋自来</li></router-link>
-                </ul>
-            </div>
-        </transition>    
+        <div id="hbmlistbox" v-if="showml">
+            <div id="hbmlistside" @click="mloff"></div>
+            <transition name="fade">
+                <div id="hbmlist" v-if="showml">
+                    <div id="htmlbox" @click="mloff">
+                        <i class="icon iconfont icon-31fanhui2"></i>
+                    </div> 
+                    <ul>
+                        <router-link to="/" class="hbtn2"><li>我的世界</li></router-link>
+                        <router-link to="/elpp2" class="hbtn2"><li>前端技术</li></router-link>
+                        <router-link to="/elpp3" class="hbtn2"><li>太极之道</li></router-link>
+                        <router-link to="/elpp4" class="hbtn2"><li>诗与远方</li></router-link>
+                        <router-link to="/elpp5" class="hbtn2"><li>有朋自来</li></router-link>
+                    </ul>
+                </div>
+            </transition>
+        </div>
+            
     </div>
     
 </template>
@@ -208,7 +212,8 @@
             z-index: 1000;
             width: 50%;
             height: 100%;
-            background-color:rgba(0, 102, 51, .9);
+            /* background-color:rgba(0, 102, 51, .9); */
+            background-color: #006633;
         }
         #htmlbox{
             width: 100%;
@@ -260,5 +265,22 @@
         }
         .navactive{
             border-bottom: 5px solid #cc6600;
+        }
+        #hbmlistbox{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 950;
+            background-color:rgba(204, 204, 153, .7); 
+        }
+        #hbmlistside{
+            width: 50%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 960;
         }
 </style>
