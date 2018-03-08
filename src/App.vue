@@ -2,8 +2,17 @@
   <div id="app">
     <!-- 给导航组件传入一个props -->
     <nav1 :message="navbiao"></nav1>
-    <div id="tf" v-if="show">{{topshu}}</div>
     <router-view/>
+    <!-- <div id="tf" v-if="show">{{topshu}}</div> -->
+    <el-popover
+      ref="popover1"
+      placement="top-start"
+      title=""
+      width="10"
+      trigger="hover"
+      content="返回顶部">
+    </el-popover>
+    <el-button v-popover:popover1 id="tf1" v-show="show" @click="wscltop"><i class="icon iconfont icon-31huidaodingbu"></i></el-button>
   </div>
 </template>
 
@@ -32,6 +41,10 @@ export default {
   //  更新页面时将当前路由的name赋值给this.navbiao，这个navbiao是要传入头部导航组件的数据
    navupd(){
      this.navbiao=this.$route.name;
+   },
+   wscltop(){
+     this.show=false;
+     window.scrollTo(0,0);
    }
   },
   mounted() {
@@ -66,5 +79,20 @@ html, body, #app{
   position: fixed;
   bottom: 10%;
   right: 10%;
+}
+#tf1{
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  font-size: large;
+  font-weight: bold;
+  opacity: .7;
+}
+.el-popover{
+  min-width: 60px;
 }
 </style>
