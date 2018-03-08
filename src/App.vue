@@ -32,7 +32,7 @@ export default {
     let winwidth = window.innerWidth;
     if(this.topshu>300 && winwidth>768){
       this.show=true;
-    }else if(this.topshu<300 && winwidth<=768){
+    }else if(this.topshu<300){
       this.show=false;
     }
    },
