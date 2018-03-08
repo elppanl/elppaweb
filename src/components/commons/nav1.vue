@@ -12,7 +12,7 @@
                 </ul>
             </div>
             <div id="hboxm" v-if="showm">
-                <router-link to="/" id="hmlogo"><img src="../../assets/elplogo1.png" alt="navlogo" class="himg1"></router-link>
+                <router-link to="/" id="hmlogo"><img src="../../assets/elplogo1.png" alt="navlogo" class="himg2"></router-link>
                 <span id="mtit">{{mtital}}</span>
                 <i class="icon iconfont icon-liebiao" @click="mlshow"></i>
             </div> 
@@ -145,6 +145,10 @@
             border-top: 5px solid #ccffcc;
         }
         .himg1{
+            width: 50px;
+            height: 50px;
+        }
+        .himg2{
             width: 50px;
             height: 50px;
             float: left;
