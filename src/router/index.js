@@ -6,6 +6,7 @@ import elpp2 from '@/components/pages/elpp2'
 import elpp3 from '@/components/pages/elpp3'
 import elpp4 from '@/components/pages/elpp4'
 import elpp5 from '@/components/pages/elpp5'
+import elpp2p1 from '@/components/pages/elpp2p1'
 
 Vue.use(Router)
 
@@ -30,10 +31,16 @@ export default new Router({
       path: '/elpp4',
       name: 'yuanfang',
       component: elpp4
-    },{
+    },
+    {
       path: '/elpp5',
       name: 'friends',
       component: elpp5
+    },
+    {
+      path: '/elpp2p1',
+      name: 'WebTechnologyp1',
+      component: elpp2p1
     }
   ],
   // 对于所有路由导航，简单地让页面滚动到顶部

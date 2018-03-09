@@ -9,7 +9,7 @@
                     <router-link to="/elpp5"><img src="../../assets/b1.jpg" alt="lun1"></router-link>
                 </el-carousel-item>
                 <el-carousel-item key="2">
-                    <router-link to="/elpp5"><img src="../../assets/b2.jpg" alt="lun2"></router-link>
+                    <router-link to="/elpp2"><img src="../../assets/b2.jpg" alt="lun2"></router-link>
                 </el-carousel-item>
                 <el-carousel-item key="3">
                     <router-link to="/elpp5"><img src="../../assets/b3.jpg" alt="lun3"></router-link>
@@ -26,7 +26,7 @@
                     <router-link to="/elpp5"><img src="../../assets/b1.jpg" alt="lun1"></router-link>
                 </van-swipe-item>
                 <van-swipe-item key="5">
-                    <router-link to="/elpp5"><img src="../../assets/b2.jpg" alt="lun2"></router-link>
+                    <router-link to="/elpp2"><img src="../../assets/b2.jpg" alt="lun2"></router-link>
                 </van-swipe-item>
                 <van-swipe-item key="6">
                     <router-link to="/elpp5"><img src="../../assets/b3.jpg" alt="lun3"></router-link>
