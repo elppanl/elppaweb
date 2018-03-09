@@ -17,23 +17,23 @@
                 <i class="icon iconfont icon-liebiao" @click="mlshow"></i>
             </div> 
         </div>
-        <div id="hbmlistbox" v-if="showml">
-            <div id="hbmlistside" @click="mloff"></div>
-            <transition name="fade">
-                <div id="hbmlist" v-if="showml">
-                    <div id="htmlbox" @click="mloff">
-                        <i class="icon iconfont icon-31fanhui2"></i>
-                    </div> 
-                    <ul>
-                        <router-link to="/" class="hbtn2"><li>我的世界</li></router-link>
-                        <router-link to="/elpp2" class="hbtn2"><li>前端技术</li></router-link>
-                        <router-link to="/elpp3" class="hbtn2"><li>太极之道</li></router-link>
-                        <router-link to="/elpp4" class="hbtn2"><li>诗与远方</li></router-link>
-                        <router-link to="/elpp5" class="hbtn2"><li>有朋自来</li></router-link>
-                    </ul>
-                </div>
-            </transition>
-        </div>
+        <div id="hbmlistbox" v-if="showml"></div>
+        <div id="hbmlistside" @click="mloff"></div>
+        <transition name="fade">
+            <div id="hbmlist" v-if="showml">
+                <div id="htmlbox" @click="mloff">
+                    <i class="icon iconfont icon-31fanhui2"></i>
+                </div> 
+                <ul>
+                    <router-link to="/" class="hbtn2"><li>我的世界</li></router-link>
+                    <router-link to="/elpp2" class="hbtn2"><li>前端技术</li></router-link>
+                    <router-link to="/elpp3" class="hbtn2"><li>太极之道</li></router-link>
+                    <router-link to="/elpp4" class="hbtn2"><li>诗与远方</li></router-link>
+                    <router-link to="/elpp5" class="hbtn2"><li>有朋自来</li></router-link>
+                </ul>
+            </div>
+        </transition>
+        
             
     </div>
     
