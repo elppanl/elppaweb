@@ -18,7 +18,7 @@
             </div> 
         </div>
         <div id="hbmlistbox" v-if="showml"></div>
-        <div id="hbmlistside" @click="mloff"></div>
+        <div id="hbmlistside" @click="mloff" v-if="showml"></div>
         <transition name="fade">
             <div id="hbmlist" v-if="showml">
                 <div id="htmlbox" @click="mloff">
