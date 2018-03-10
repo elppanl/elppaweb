@@ -45,7 +45,15 @@ export default {
    },
    wscltop(){
      this.show=false;
-     window.scrollTo(0,0);
+    // js方法
+    //  window.scrollTo(0,0);
+    // juqery方法
+    $("html, body").animate({
+    scrollTop: "0"
+    }, {
+    duration: 300,
+    easing: "swing"
+    });
    }
   },
   mounted() {

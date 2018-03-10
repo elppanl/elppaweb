@@ -6,6 +6,9 @@ import router from './router'
 import nav from './components/commons/nav1'
 import come from './components/commons/comingsoon'
 
+// 引入jquery
+import $ from 'jquery'
+
 // 引入element开始
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
