@@ -176,6 +176,7 @@
     .p2arightm{
         width: 100%;
         background-color: lightcoral;
+        padding-top: 90px;
     }
 </style>
 
