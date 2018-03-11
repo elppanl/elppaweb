@@ -6,6 +6,7 @@
         <div id="arthead"></div>
         <div id="artbox" :class="{'p2artm':p2am, 'p2artpc':p2apc}">
             <div id="artleft" v-if="p2aleft">
+                <h2>文章目录</h2>
                 <h1 @click="inx1">aaa</h1>
                 <h1 @click="inx2">bbb</h1>
                 <h1 @click="inx3">ccc</h1>
@@ -66,6 +67,7 @@
                     <p>111111111111</p>
                 </div>
             </div>
+            <div class="clear"></div>
         </div>
     </div>
 </template>
@@ -104,7 +106,7 @@
                 }
             },
             inx1(){
-                 let tt=$("#d1").offset().top-150
+                 let tt=$("#d1").offset().top-160
                  $("html, body").animate({
                     scrollTop: tt + "px"
                     }, {
@@ -114,7 +116,7 @@
 
             },
             inx2(){
-                 let tt=$("#d2").offset().top-150
+                 let tt=$("#d2").offset().top-160
                  $("html, body").animate({
                     scrollTop: tt + "px"
                     }, {
@@ -124,7 +126,7 @@
 
             },
             inx3(){
-                 let tt=$("#d3").offset().top-150
+                 let tt=$("#d3").offset().top-160
                  $("html, body").animate({
                     scrollTop: tt + "px"
                     }, {
@@ -144,39 +146,52 @@
 <style>
     #elpp2p1{
         margin-top: 60px;
+        background-color: #ccffcc;
     }
     #arthead{
         height: 90px;
         width: 100%;
-        background-color: lawngreen;
         position: fixed;
+        border: 1px solid #e9e9e9;
+        background-color: #ffffff;
     }
     .p2artpc{
         width: 980px;
         margin: 0 auto;
-        background-color: lightblue;
     }
     .p2artm{
         width: 100%;
-        background-color: lightblue;
     }
     #artleft{
         width: 200px;
         float: left;
-        background-color: lavender;
         position: fixed;
-        top: 150px;
+        top: 160px;
+        border: 1px solid #e9e9e9;
+        border-radius: 4px;
+        background-color: #ffffff;
+        text-align: center;
+    }
+    #artleft>h2{
+        border-bottom: 1px solid #e9e9e9;
+        line-height: 50px;
     }
     .p2arightpc{
         width:770px;
-        background-color: lightcoral;
         float: right;
-        margin-top: 90px;
+        margin-top: 100px;
+        border: 1px solid #e9e9e9;
+        border-radius: 4px;
+        background-color: #ffffff;
     }
     .p2arightm{
         width: 100%;
-        background-color: lightcoral;
-        padding-top: 90px;
+        border: 1px solid #e9e9e9;
+        padding-top: 100px;
+        background-color: #ffffff;
+    }
+    .clear{
+        clear: both;
     }
 </style>
 
