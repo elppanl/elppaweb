@@ -8,10 +8,10 @@
         </div>
         <div id="p2p1b2" :class="{'p2bm':p2m, 'p2bpc':p2pc}">
             <!-- 文章块开始 -->
-            <router-link to="/artemplate1" class="p2block" :class="{'p2blockm':p2m, 'p2blockpc':p2pc}">
+            <router-link to="/elpp2p1" class="p2block" :class="{'p2blockm':p2m, 'p2blockpc':p2pc}">
                 <div class="p2b2boxs" :class="{'p2b2boxsm':p2m, 'p2b2boxspc':p2pc}">
                     <div class="p2b2imgbox" :class="{'p2b2imgboxm':p2m, 'p2b2imgboxpc':p2pc}">
-                        <img src="../../assets/elplogo1.png">
+                        <img src="../../assets/elplogo2.png">
                     </div>
                     <div class="p2b2textbox" :class="{'p2b2textboxm':p2m, 'p2b2textboxpc':p2pc}">
                         <div class="p2b2text1" :class="{'p2b2text1m':p2m, 'p2b2text1pc':p2pc}">
@@ -138,7 +138,7 @@
                 </div>
             </router-link>
             <!-- 文章块结束 -->
-
+            <div class="clear"></div>
         </div>
     </div>
 </template>
@@ -187,6 +187,7 @@
 <style scoped>
     #elpp2{
         margin-top: 60px;
+        background-color: #f6f6f6;
     }
     #p2p1b2{
         padding-bottom: 50px;
@@ -213,13 +214,15 @@
     .p2b2imgboxpc{
         width: 150px;
         height: 150px;
-        border: 1px solid #e9e9e9;
+        /* border: 1px solid #e9e9e9; */
+        border: 1px solid #cccccc;
         float: left;
     }
     .p2b2imgboxm{
         width: 130px;
         height: 130px;
-        border: 1px solid #e9e9e9;
+        /* border: 1px solid #e9e9e9; */
+        border: 1px solid #cccccc;
         float: left;
     }
     .p2block img{
@@ -253,7 +256,8 @@
         width: 100%;
         height: 40%;
         /* border: 1px solid #e9e9e9; */
-        border-top: 1px solid #e9e9e9;
+        /* border-top: 1px solid #e9e9e9; */
+        border-top: 1px solid #cccccc;
     }
     .p2b2text1m{
         width: 100%;
@@ -270,7 +274,7 @@
         margin-bottom: 0;
     }
     .p2b2text1 p{
-        font-size: 22px;
+        font-size: 20px;
         color: #663333;
         text-align: center;
         margin-top: 8px;
@@ -301,9 +305,13 @@
         margin-top: 25px;
         margin-right: 6px;
         margin-left: 6px;
+        background-color: #ffffff;
     }
     .p2blockpc:hover{
-        background-color: #e9e9e9;
+        /* background-color: #e9e9e9; */
+        /* background-color: #f6f6f6; */
+        background-color: #ccffcc;
+        border: 1px solid #cccccc;
     }
     .p2blockm{
         width: 90%;
@@ -314,6 +322,7 @@
         border: 1px solid #e9e9e9;
         border-radius: 5px;
         display:inline-block;
+        background-color: #ffffff;
     }
     #p2p1b1>img{
         width: 100%;

@@ -5,7 +5,7 @@
         </come> -->
         <div id="arthead" :class="{'p2artheadm':p2am, 'p2artheadpc':p2apc}">
             <p>这里是文章的标题的标题的标题</p>
-            <span>2018年3月1日</span>
+            <span>2088年12月12日</span>
         </div>
         <div id="artbox" :class="{'p2artm':p2am, 'p2artpc':p2apc}">
             <div id="artleft" v-if="p2aleft">
@@ -195,7 +195,10 @@
 <style>
     #xtemplate1{
         margin-top: 60px;
-        background-color: #ccffcc;
+        /* background-color: #ccffcc; */
+        background-color: #f6f6f6;
+        /* background-color: #cccccc; */
+        /* background-color: #ccffff; */
     }
     #arthead{
         width: 100%;
