@@ -3,8 +3,9 @@
         <!-- <come>
             <p>《前端科技》文章在建中</p>
         </come> -->
-        <div id="arthead">
-            <p>这里是文章的标题的标题的标题 &nbsp &nbsp <sub>2018年3月1日</sub></p>
+        <div id="arthead" :class="{'p2artheadm':p2am, 'p2artheadpc':p2apc}">
+            <p>这里是文章的标题的标题的标题</p>
+            <span>2018年3月1日</span>
         </div>
         <div id="artbox" :class="{'p2artm':p2am, 'p2artpc':p2apc}">
             <div id="artleft" v-if="p2aleft">
@@ -197,20 +198,27 @@
         background-color: #ccffcc;
     }
     #arthead{
-        height: 90px;
         width: 100%;
         position: fixed;
         z-index: 800;
         border: 1px solid #e9e9e9;
         background-color: #ffffff;
+        text-align: center;
+    }
+    .p2artheadpc{
+        height: 90px;
+    }
+    .p2artheadm{
+        padding-bottom: 10px;
     }
     #arthead p{
-        margin-top: 0;
+        margin-top: 15px;
+        margin-bottom: 10px;
         color: #663333;
         font-size: 24px;
     }
-    #arthead sub{
-        font-size: 15px
+    #arthead span{
+        color: #663333;
     }
     .p2artpc{
         width: 980px;
