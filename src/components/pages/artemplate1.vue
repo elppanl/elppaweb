@@ -3,7 +3,9 @@
         <!-- <come>
             <p>《前端科技》文章在建中</p>
         </come> -->
-        <div id="arthead"></div>
+        <div id="arthead">
+            <p>这里是文章的标题的标题的标题 &nbsp &nbsp <sub>2018年3月1日</sub></p>
+        </div>
         <div id="artbox" :class="{'p2artm':p2am, 'p2artpc':p2apc}">
             <div id="artleft" v-if="p2aleft">
                 <h3>文章目录</h3>
@@ -202,6 +204,14 @@
         border: 1px solid #e9e9e9;
         background-color: #ffffff;
     }
+    #arthead p{
+        margin-top: 0;
+        color: #663333;
+        font-size: 24px;
+    }
+    #arthead sub{
+        font-size: 15px
+    }
     .p2artpc{
         width: 980px;
         margin: 0 auto;
@@ -255,6 +265,7 @@
         box-sizing:border-box;
         -moz-box-sizing:border-box; /* Firefox */
         -webkit-box-sizing:border-box; /* Safari */
+        color: #555;
     }
     #artright p{
         font-size: 15px;
