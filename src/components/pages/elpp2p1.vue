@@ -257,7 +257,7 @@
     .p2arightm{
         width: 100%;
         border: 1px solid #e9e9e9;
-        padding-top: 100px;
+        padding-top: 120px;
         background-color: #ffffff;
     }
     .clear{

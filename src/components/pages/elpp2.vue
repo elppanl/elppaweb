@@ -221,8 +221,7 @@
     .p2b2imgboxm{
         width: 130px;
         height: 130px;
-        /* border: 1px solid #e9e9e9; */
-        border: 1px solid #cccccc;
+        border: 1px solid #e9e9e9;
         float: left;
     }
     .p2block img{
