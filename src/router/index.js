@@ -7,6 +7,7 @@ import elpp3 from '@/components/pages/elpp3'
 import elpp4 from '@/components/pages/elpp4'
 import elpp5 from '@/components/pages/elpp5'
 import elpp2p1 from '@/components/pages/elpp2p1'
+import artemplate1 from '@/components/pages/artemplate1'
 
 Vue.use(Router)
 
@@ -41,6 +42,11 @@ export default new Router({
       path: '/elpp2p1',
       name: 'WebTechnologyp1',
       component: elpp2p1
+    },
+    {
+      path: '/artemplate1',
+      name: 'xtemplate1',
+      component: artemplate1
     }
   ],
   // 对于所有路由导航，简单地让页面滚动到顶部

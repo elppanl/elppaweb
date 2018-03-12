@@ -72,6 +72,9 @@ html, body, #app{
   height: 100%;
   padding: 0;
   margin: 0;
+  /* box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box; */
 }
 #app {
   /* font-family: 'Avenir', Helvetica, Arial, sans-serif; */

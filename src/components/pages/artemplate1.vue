@@ -1,5 +1,5 @@
 <template>
-    <div id="elpp2p1">
+    <div id="xtemplate1">
         <!-- <come>
             <p>《前端科技》文章在建中</p>
         </come> -->
@@ -190,7 +190,7 @@
 </script>
 
 <style>
-    #elpp2p1{
+    #xtemplate1{
         margin-top: 60px;
         background-color: #ccffcc;
     }
