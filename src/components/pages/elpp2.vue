@@ -270,7 +270,7 @@
         margin-bottom: 0;
     }
     .p2b2text1 p{
-        font-size: 24px;
+        font-size: 22px;
         color: #663333;
         text-align: center;
         margin-top: 8px;
@@ -293,13 +293,14 @@
     }
 
     .p2blockpc{
-        width: 482px;
+        width: 476px;
         height: 180px;
         border: 1px solid #e9e9e9;
         border-radius: 5px;
         float: left;
-        margin-top: 10px;
-        margin-right: 5px;
+        margin-top: 25px;
+        margin-right: 6px;
+        margin-left: 6px;
     }
     .p2blockpc:hover{
         background-color: #e9e9e9;
