@@ -38,10 +38,10 @@
         <!-- 介绍板块开始 -->
         <div id="jieshao" :class="{'jieshaom':p1m, 'jieshaopc':p1pc}">
             <p>栏目介绍</p>
-            <router-link to="/elpp2" class="jieshaotubox"><img src="../../assets/z1.jpg" alt="jie1"></router-link>
-            <router-link to="/elpp3" class="jieshaotubox"><img src="../../assets/z2.jpg" alt="jie2"></router-link>
-            <router-link to="/elpp4" class="jieshaotubox"><img src="../../assets/z3.jpg" alt="jie3"></router-link>
-            <router-link to="/elpp5" class="jieshaotubox"><img src="../../assets/z4.jpg" alt="jie4"></router-link>
+            <router-link to="/elpp2" class="jieshaotubox" :class="{'jieshaotuboxm':p1m, 'jieshaotuboxpc':p1pc}"><img src="../../assets/z1.jpg" alt="jie1"></router-link>
+            <router-link to="/elpp3" class="jieshaotubox" :class="{'jieshaotuboxm':p1m, 'jieshaotuboxpc':p1pc}"><img src="../../assets/z2.jpg" alt="jie2"></router-link>
+            <router-link to="/elpp4" class="jieshaotubox" :class="{'jieshaotuboxm':p1m, 'jieshaotuboxpc':p1pc}"><img src="../../assets/z3.jpg" alt="jie3"></router-link>
+            <router-link to="/elpp5" class="jieshaotubox" :class="{'jieshaotuboxm':p1m, 'jieshaotuboxpc':p1pc}"><img src="../../assets/z4.jpg" alt="jie4"></router-link>
         </div>
         <!-- 介绍板块结束 -->
 
@@ -149,26 +149,35 @@
         line-height: 45px;
         color: #663333;
     }
-    .jieshaotubox{
+    .jieshaotuboxpc{
         width: 320px;
         height: 180px;
         display:inline-block;
         margin: 10px;
         overflow: hidden;
     }
-    .jieshaotubox>img{
+    .jieshaotuboxpc>img{
         width: 100%;
         transition: all 2s;
         -moz-transition: all 2s;	/* Firefox 4 */
         -webkit-transition: all 2s;	/* Safari 和 Chrome */
         -o-transition: all 2s;	/* Opera */
     }
-    .jieshaotubox>img:hover{
+    .jieshaotuboxpc>img:hover{
         transform:scale(1.2,1.2);
         -ms-transform:scale(1.2,1.2); /* IE 9 */
         -moz-transform:scale(1.2,1.2); /* Firefox */
         -webkit-transform:scale(1.2,1.2); /* Safari and Chrome */
         -o-transform:scale(1.2,1.2); /* Opera */
+    }
+    .jieshaotuboxm{
+        width: 320px;
+        height: 180px;
+        display: block;
+        margin: 15px auto;
+    }
+    .jieshaotuboxm>img{
+        width: 100%;
     }
     /* 介绍结束 */
 
