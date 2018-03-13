@@ -3,7 +3,7 @@
         <!-- <come>
             <p>《前端技术》栏目在建中</p>
         </come> -->
-        <div id="p2p1b1" :class="{'p2bm':p2m, 'p2bpc':p2pc}">
+        <div id="p2p1b1" :class="{'p2b1m':p2m, 'p2b1pc':p2pc}">
             <img src="../../assets/ptu1.jpg" alt="ptu1">
         </div>
         <div id="p2p1b2" :class="{'p2bm':p2m, 'p2bpc':p2pc}">
@@ -192,6 +192,21 @@
     #p2p1b2{
         padding-bottom: 50px;
     }
+    .p2b1pc{
+        width: 100%;
+        background-color: #f6f6f6;
+    }
+    .p2b1pc>img{
+        width: 980px;
+        display:block;
+        margin: 0 auto;
+    }
+    .p2b1m{
+        width: 100%;
+    }
+    .p2b1m>img{
+        width: 100%;
+    }
     .p2bpc{
         width: 980px;
         margin: 0 auto;
@@ -323,9 +338,9 @@
         display:inline-block;
         background-color: #ffffff;
     }
-    #p2p1b1>img{
+    /* #p2p1b1>img{
         width: 100%;
-    }
+    } */
     .clear{
         clear: both;
     }

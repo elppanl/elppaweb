@@ -46,7 +46,8 @@
     #elpp5{
         margin-top: 60px;
         width: 100%;
-        background-color: #cccc99;
+        /* background-color: #cccc99; */
+        background-color: #f6f6f6;
         /* background-color: #336666; */
     }
     .jiantu1{

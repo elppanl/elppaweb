@@ -192,7 +192,7 @@
     }
 </script>
 
-<style>
+<style scoped>
     #elpp2p1{
         margin-top: 60px;
         /* background-color: #ccffcc; */
@@ -204,8 +204,9 @@
         width: 100%;
         position: fixed;
         z-index: 800;
-        border: 1px solid #e9e9e9;
-        background-color: #ffffff;
+        border-bottom: 1px solid #e9e9e9;
+        /* background-color: #ffffff; */
+        background-color:rgba(255, 255, 255, .9);
         text-align: center;
     }
     .p2artheadpc{

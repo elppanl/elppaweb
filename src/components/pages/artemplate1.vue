@@ -192,7 +192,7 @@
     }
 </script>
 
-<style>
+<style scoped>
     #xtemplate1{
         margin-top: 60px;
         /* background-color: #ccffcc; */

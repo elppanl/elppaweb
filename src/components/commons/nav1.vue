@@ -67,7 +67,6 @@
                 }
             },
             sf(){
-                console.log(window.innerWidth);
                 if(window.innerWidth>768){
                     this.show=true;
                     this.showm=false;
@@ -93,8 +92,6 @@
         watch:{
             // 监测父组件用props传来的值，一旦有变化，就执行下面函数
             message(newVal, oldVal){
-                console.log("111111111111"+newVal);
-                console.log("222222222222"+oldVal);
                 let name=newVal;
                 if(name==='HomePage'){
                     this.isActive1=true;
@@ -141,12 +138,15 @@
         #head{
             width: 100%;
             height: 50px;
-            background-color: #ccffcc;
+            /* background-color: #ccffcc; */
+            background-color:rgba(255, 255, 255, .8);
             position: fixed;
             top: 0;
             z-index: 900;
-            border-bottom: 5px solid #ccffcc;
-            border-top: 5px solid #ccffcc;
+            /* border-bottom: 5px solid #ccffcc; */
+            border-bottom: 5px solid rgba(204, 255, 204, .8);
+            /* border-top: 5px solid #ccffcc; */
+            border-top: 5px solid rgba(255, 255, 255, .8);
         }
         .himg1{
             width: 50px;
@@ -182,7 +182,7 @@
             display: -webkit-inline-box;
             margin-left: 30px;
             text-decoration: none;
-            font-size: large;
+            font-size: 16px;
             color:#663333;
         }
         .hbtn1:hover{

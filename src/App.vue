@@ -13,6 +13,7 @@
       content="返回顶部">
     </el-popover>
     <el-button v-popover:popover1 id="tf1" v-show="show" @click="wscltop"><i class="icon iconfont icon-31huidaodingbu"></i></el-button>
+    <footer1></footer1>
   </div>
 </template>
 

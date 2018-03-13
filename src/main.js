@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import nav from './components/commons/nav1'
 import come from './components/commons/comingsoon'
+import footer from './components/commons/footer1'
 
 // 引入jquery
 import $ from 'jquery'
@@ -32,6 +33,7 @@ Vue.config.productionTip = false
 // 这里是通用的组件
 Vue.component('nav1',nav);
 Vue.component('come',come);
+Vue.component('footer1',footer);
 
 // 这里是根实例
 new Vue({
