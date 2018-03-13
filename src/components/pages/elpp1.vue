@@ -34,6 +34,18 @@
             </van-swipe>
         </div>
         <!-- vant结束 -->
+
+        <!-- 介绍板块开始 -->
+        <div id="jieshao" :class="{'jieshaom':p1m, 'jieshaopc':p1pc}">
+            <p>栏目介绍</p>
+            <router-link to="/elpp2" class="jieshaotubox"><img src="../../assets/z1.jpg" alt="jie1"></router-link>
+            <router-link to="/elpp3" class="jieshaotubox"><img src="../../assets/z2.jpg" alt="jie2"></router-link>
+            <router-link to="/elpp4" class="jieshaotubox"><img src="../../assets/z3.jpg" alt="jie3"></router-link>
+            <router-link to="/elpp5" class="jieshaotubox"><img src="../../assets/z4.jpg" alt="jie4"></router-link>
+        </div>
+        <!-- 介绍板块结束 -->
+
+
     </div>
     
 
@@ -44,27 +56,37 @@
         data:function(){
             return{
                 pclun:'',
-                mmlun:''
+                mmlun:'',
+                p1pc:'',
+                p1m:''
             }
         },
         methods:{
             panduan(){
-                if(window.innerWidth>979){
+                if(window.innerWidth>768){
                     this.pclun=true;
                     this.mmlun=false;
+                    this.p1pc=true;
+                    this.p1m=false;
                 }else{
                     this.pclun=false;
                     this.mmlun=true;
+                    this.p1pc=false;
+                    this.p1m=true;
                 }
             },
             sf(){
                 console.log(window.innerWidth);
-                if(window.innerWidth>979){
+                if(window.innerWidth>768){
                     this.pclun=true;
                     this.mmlun=false;
+                    this.p1pc=true;
+                    this.p1m=false;
                 }else{
                     this.pclun=false;
                     this.mmlun=true;
+                    this.p1pc=false;
+                    this.p1m=true;
                 }
             }
         },
@@ -108,6 +130,47 @@
         width: 100%;
     }
     /* vant结束 */
+
+    /* 介绍开始 */
+    .jieshaopc{
+        width: 768px;
+        margin: 50px auto;
+        /* background-color: lawngreen; */
+        text-align: center;
+        border-top: 2px solid #4ab0d0;
+    }
+    .jieshaom{
+        width: 100%;
+        /* background-color: lawngreen; */
+        text-align: center;
+    }
+    #jieshao>p{
+        font-size: 22px;
+        line-height: 45px;
+        color: #663333;
+    }
+    .jieshaotubox{
+        width: 320px;
+        height: 180px;
+        display:inline-block;
+        margin: 10px;
+        overflow: hidden;
+    }
+    .jieshaotubox>img{
+        width: 100%;
+        transition: all 2s;
+        -moz-transition: all 2s;	/* Firefox 4 */
+        -webkit-transition: all 2s;	/* Safari 和 Chrome */
+        -o-transition: all 2s;	/* Opera */
+    }
+    .jieshaotubox>img:hover{
+        transform:scale(1.2,1.2);
+        -ms-transform:scale(1.2,1.2); /* IE 9 */
+        -moz-transform:scale(1.2,1.2); /* Firefox */
+        -webkit-transform:scale(1.2,1.2); /* Safari and Chrome */
+        -o-transform:scale(1.2,1.2); /* Opera */
+    }
+    /* 介绍结束 */
 
 </style>
 
