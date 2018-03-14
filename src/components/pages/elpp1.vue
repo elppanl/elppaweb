@@ -144,10 +144,17 @@
         /* background-color: lawngreen; */
         text-align: center;
     }
-    #jieshao>p{
+    .jieshaopc>p{
         font-size: 22px;
         line-height: 45px;
         color: #663333;
+    }
+    .jieshaom>p{
+        font-size: 22px;
+        line-height: 45px;
+        color: #663333;
+        border-top: 2px solid #ccffcc;
+        border-bottom: 1px solid #ccffcc;
     }
     .jieshaotuboxpc{
         width: 320px;
