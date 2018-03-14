@@ -3,6 +3,7 @@
         <div class="toutu" :class="{'toutum':ptoum, 'toutupc':ptoupc}">
             <img src="../../assets/ptu2.jpg" alt="ptu2">
         </div>
+        <p class="lmsm">本栏目将以自然，养生，健身，运动等为主要内容</p>
         <come>
             <p>《太极之道》栏目在建中</p>
         </come>
@@ -61,5 +62,10 @@
     }
     .toutum>img{
         width: 100%;
+    }
+    .lmsm{
+        text-align: center;
+        font-size: larger;
+        color: #006699;
     }
 </style>

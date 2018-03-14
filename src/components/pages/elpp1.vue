@@ -39,9 +39,9 @@
         <div id="jieshao" :class="{'jieshaom':p1m, 'jieshaopc':p1pc}">
             <p>栏目介绍</p>
             <router-link to="/elpp2" class="jieshaotubox" :class="{'jieshaotuboxm':p1m, 'jieshaotuboxpc':p1pc}"><img src="../../assets/z1.jpg" alt="jie1"></router-link>
-            <router-link to="/elpp3" class="jieshaotubox" :class="{'jieshaotuboxm':p1m, 'jieshaotuboxpc':p1pc}"><img src="../../assets/z2.jpg" alt="jie2"></router-link>
+            <router-link to="/elpp5" class="jieshaotubox" :class="{'jieshaotuboxm':p1m, 'jieshaotuboxpc':p1pc}"><img src="../../assets/z2.jpg" alt="jie2"></router-link>
             <router-link to="/elpp4" class="jieshaotubox" :class="{'jieshaotuboxm':p1m, 'jieshaotuboxpc':p1pc}"><img src="../../assets/z3.jpg" alt="jie3"></router-link>
-            <router-link to="/elpp5" class="jieshaotubox" :class="{'jieshaotuboxm':p1m, 'jieshaotuboxpc':p1pc}"><img src="../../assets/z4.jpg" alt="jie4"></router-link>
+            <router-link to="/elpp3" class="jieshaotubox" :class="{'jieshaotuboxm':p1m, 'jieshaotuboxpc':p1pc}"><img src="../../assets/z4.jpg" alt="jie4"></router-link>
         </div>
         <!-- 介绍板块结束 -->
 

@@ -3,6 +3,7 @@
         <div class="toutu" :class="{'toutum':ptoum, 'toutupc':ptoupc}">
             <img src="../../assets/ptu3.jpg" alt="ptu3">
         </div>
+        <p class="lmsm">本栏目将以个人文学作品展示，游记等为主要内容</p>
         <come>
             <p>《诗与远方》栏目在建中</p>
         </come>
@@ -61,5 +62,10 @@
     }
     .toutum>img{
         width: 100%;
+    }
+    .lmsm{
+        text-align: center;
+        font-size: larger;
+        color: #006699;
     }
 </style>
