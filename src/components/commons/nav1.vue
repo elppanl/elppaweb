@@ -25,11 +25,11 @@
                     <i class="icon iconfont icon-31fanhui2"></i>
                 </div> 
                 <ul>
-                    <router-link to="/" class="hbtn2"><li>我的世界</li></router-link>
-                    <router-link to="/elpp2" class="hbtn2"><li>前端技术</li></router-link>
-                    <router-link to="/elpp3" class="hbtn2"><li>太极之道</li></router-link>
-                    <router-link to="/elpp4" class="hbtn2"><li>诗与远方</li></router-link>
-                    <router-link to="/elpp5" class="hbtn2"><li>有朋自来</li></router-link>
+                    <router-link to="/" class="hbtn2"><li @click="mloff">我的世界</li></router-link>
+                    <router-link to="/elpp2" class="hbtn2"><li @click="mloff">前端技术</li></router-link>
+                    <router-link to="/elpp3" class="hbtn2"><li @click="mloff">太极之道</li></router-link>
+                    <router-link to="/elpp4" class="hbtn2"><li @click="mloff">诗与远方</li></router-link>
+                    <router-link to="/elpp5" class="hbtn2"><li @click="mloff">有朋自来</li></router-link>
                 </ul>
             </div>
         </transition>
@@ -80,9 +80,6 @@
             },
             mloff(){
                 this.showml=false;
-            },
-            mltop(){
-
             }
         },
         mounted() {
@@ -213,14 +210,18 @@
             width: 50%;
             height: 100%;
             /* background-color:rgba(0, 102, 51, .9); */
-            background-color: #006633;
+            /* background-color: #006633; */
+            /* background-color: #303643; */
+            /* background-color: #393939; */
+            background-color: #333333;
         }
         #htmlbox{
             width: 100%;
             height: 50px;
             line-height: 50px;
-            border-bottom: 5px solid #ccffcc;
-            background-color: #006633;
+            /* border-bottom: 5px solid #ccffcc; */
+            border-bottom: 5px solid #666666;
+            border-top: 5px solid #333333;
         }
         #htmlbox>i{
             font-size: 26px;
@@ -238,7 +239,8 @@
             line-height: 50px;
         }
         .hbtn2>li{
-            border-bottom: 1px solid #ccffcc;
+            /* border-bottom: 1px solid #ccffcc; */
+            border-bottom: 1px solid #666666;
         }
         #hbmlist>ul{
             padding-left: 0;
@@ -273,7 +275,10 @@
             top: 0;
             left: 0;
             z-index: 950;
-            background-color:rgba(204, 204, 153, .7); 
+            /* background-color:rgba(204, 204, 153, .7);  */
+            /* background-color:rgba(64, 72, 91, .7);  */
+            /* background-color:rgba(76, 76, 76, .7);  */
+            background-color:rgba(102, 102, 102, .7); 
         }
         #hbmlistside{
             width: 50%;
