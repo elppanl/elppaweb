@@ -239,9 +239,14 @@
         border: 1px solid #e9e9e9;
         float: left;
     }
-    .p2block img{
+    .p2b2imgboxpc img{
         width: 150px;
         height: 150px;
+        opacity: .5;
+    }
+    .p2b2imgboxm img{
+        width: 130px;
+        height: 130px;
         opacity: .5;
     }
     .p2b2textboxpc{

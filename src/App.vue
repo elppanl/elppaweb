@@ -76,11 +76,12 @@ html, body, #app{
   /* box-sizing:border-box;
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box; */
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 }
 img{border:0px};
 #app {
   /* font-family: 'Avenir', Helvetica, Arial, sans-serif; */
-  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  /* font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */
