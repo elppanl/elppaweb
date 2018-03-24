@@ -186,6 +186,10 @@
     .jieshaotuboxm>img{
         width: 100%;
     }
+    .jieshaotubox>img{
+        width: 320px;
+        height: 180px;
+    }
     /* 介绍结束 */
 
 </style>

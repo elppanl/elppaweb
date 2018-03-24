@@ -240,7 +240,8 @@
         float: left;
     }
     .p2block img{
-        width: 100%;
+        width: 150px;
+        height: 150px;
         opacity: .5;
     }
     .p2b2textboxpc{

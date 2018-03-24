@@ -30,7 +30,9 @@
                     <router-link to="/elpp3" class="hbtn2"><li @click="mloff">太极之道</li></router-link>
                     <router-link to="/elpp4" class="hbtn2"><li @click="mloff">诗与远方</li></router-link>
                     <router-link to="/elpp5" class="hbtn2"><li @click="mloff">有朋自来</li></router-link>
+                    <div class="clear"></div>
                 </ul>
+                <div class="clear"></div>
             </div>
         </transition>
         
@@ -169,14 +171,14 @@
         #hbox>ul{
             /* width: 600px; */
             padding-right: 35px;
-            display: -webkit-inline-box;
+            /* display: -webkit-inline-box; */
             float: right;
             margin-top: 0;
             margin-bottom: 0;
         }
         .hbtn1{
             list-style: none;
-            display: -webkit-inline-box;
+            display: inline-block;
             margin-left: 30px;
             text-decoration: none;
             font-size: 16px;
@@ -287,5 +289,8 @@
             top: 0;
             left: 0;
             z-index: 960;
+        }
+        .clear{
+            clear: both;
         }
 </style>
